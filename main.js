@@ -12,6 +12,23 @@ $(document).ready(function () {
         prevImg();
       }
     );
+    // bonus
+    $(document).keydown(function (){
+      console.log(event.which);
+      // next
+      if (event.keyCode == 39) {
+        nextImg();
+
+      }
+      else if (event.keyCode == 37) {
+        prevImg();
+      }
+      else if (event.keyCode == 32) {
+        nextImg();
+      }
+    }
+   );
+
   }
 );
 
